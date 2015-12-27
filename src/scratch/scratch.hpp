@@ -3,20 +3,26 @@
 #include <memory>
 #include <vector>
 
+#include <GLES2/gl2.h>
+
 #include <projection/drawing.hpp>
 #include <projection/program_helper.hpp>
 
-#include <GLES2/gl2.h>
+#include <scratch/article.hpp>
 
 
 namespace scratch {
   class scratch : public projection::drawing {
-    std::unique_ptr<projection::program_helper> program_helper;
+    bool variable_lifespan = false;
     GLuint program;
-    GLuint vbos[1];
+    GLuint vbo[2];
+    std::unique_ptr<projection::program_helper> program_helper;
+    std::vector<article> articles; // x coords of texture articles
+    void update();
+    void spawn();
   public:
     void setup();
     void draw();
-    scratch() {};
+    explicit scratch(){};
   };
 }

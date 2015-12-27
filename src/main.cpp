@@ -1,3 +1,5 @@
+#include <csignal>
+#include <memory>
 #include <iostream>
 
 #include <projection/play.hpp>
