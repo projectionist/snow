@@ -1,6 +1,6 @@
 # README
 
-An empty C++ Open GL ES 2.0 scratch project providing drawing context for projections.  
+The repository is a base for [projections](http://projectionist.array.bz/projections/) which use particles.
 Visit [http://projectionist.array.bz/projections](http://projectionist.array.bz/projections) for some example projections based on this project.
 
 ## Usage
