@@ -13,7 +13,7 @@
 
 namespace scratch {
   class scratch : public projection::drawing {
-    bool variable_lifespan = false;
+    bool variable_lifespan = true;
     GLuint program;
     GLuint vbo[2];
     std::unique_ptr<projection::program_helper> program_helper;
